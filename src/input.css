@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: dana;
+    src: url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "dana-medium";
+    src: url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "dana-bold";
+    src: url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "orabba-light";
+    src: url("../fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "morabba-medium";
+    src: url("../fonts/Morabba/woff2/morabba-medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "morabba-bold";
+    src: url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+  }
+}
+@layer components {
+  .bgtop {
+    background: url("../public/headerBgMobile.webp") no-repeat center/cover;
+
+    height: 400px;
+  }
+  .bgtoppc {
+    background: url("../public/headerBgDesktop.png") no-repeat center/cover;
+    height: 800px;
+    
+  }
+  #bodybg {
+    background: url("../public/body-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .darkscreen {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.6) 33.85%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+  .decotaion {
+    text-decoration-color: red;
+  }
+  .green {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+  }
+  .orange {
+    background: linear-gradient(270deg, #fdba74 0%, #fed7aa 100%);
+  }
+  .blog {
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+  }
+}

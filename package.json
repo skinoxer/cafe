@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "tailwindcss-debug-screens": "^2.2.1"
+  },
+  "scripts": {
+    "div": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  }
+}
